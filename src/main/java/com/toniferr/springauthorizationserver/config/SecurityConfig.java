@@ -82,7 +82,7 @@ public class SecurityConfig {
     @Bean
     public UserDetailsService userDetailsService() {
         //UserDetailsService componente de seguridad standar de spring
-        //no es propio del servidor de authentication de spring
+        //no es propio del servidor de authorization de spring
 
         UserDetails userDetails = User.withDefaultPasswordEncoder()
                 .username("user")
